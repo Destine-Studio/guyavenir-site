@@ -1,0 +1,117 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef6e4;
+  color: #333;
+}
+
+/* En-tête */
+header {
+  background-color: #d9b48a;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.intro-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Section principale */
+main {
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: #5b3921;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+a {
+  color: #5b3921;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pied de page */
+
+footer {
+  background-color: #e6d4bd;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 3em;
+}
+
+.footer-img {
+  width: 120px;
+  margin-bottom: 1em;
+}
+
+.footer-links {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5b3921;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .intro-contact {
+    padding: 0 1em;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+  }
+}

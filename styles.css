@@ -1,0 +1,500 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #faf9f6;
+  color: #333;
+}
+
+/* en tete */
+
+header {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #f0eada;
+}
+
+.logo {
+  width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.intro {
+  font-style: italic;
+  color: #6b5e4e;
+}
+
+/* menu */
+
+.burger-menu {
+  position: relative;
+  text-align: right;
+  padding: 1em;
+}
+
+.menu-items {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+#menu-toggle:checked + label + .menu-items {
+  display: block;
+}
+
+.menu-items li a {
+  display: block;
+  padding: 0.5em;
+  background-color: #f3e7d3;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: #5b3921;
+  border-radius: 4px;
+}
+
+/* image independance */
+
+.hero-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2em auto;
+  /* margin-bottom: 2em; */
+}
+
+.message-destine {
+  background-color: #fdf4df;
+  border-left: 6px solid #c1926f;
+  padding: 2em;
+  margin: 3em auto;
+  max-width: 850px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.message-destine h2 {
+  text-align: center;
+  color: #5b3921;
+  font-size: 1.6em;
+  margin-bottom: 1.2em;
+}
+
+.message-destine p {
+  text-align: justify;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+/* telecharger constitution */
+
+.telechargement {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.pdf-link {
+  font-size: 1.2em;
+  background-color: #d4b98b;
+  padding: 0.7em 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Details titres */
+
+details div {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+details div img {
+  width: 600px;
+}
+
+details {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  background-color: #f9f3e6;
+  border-radius: 6px;
+  border: 1px solid #d8c6a9;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: #f2e9d8;
+}
+
+details div {
+  margin-top: 0.5em;
+  line-height: 1.6;
+}
+
+/* sommaire */
+
+.sommaire {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.sommaire h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.titres {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.titres li {
+  padding: 0.4em;
+  border-bottom: 1px solid #ccc;
+}
+
+/* titre Guyavenir */
+
+.titre-guyavenir {
+  text-align: justify;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* symboles audio */
+
+.hymnes-nationaux {
+  background-color: #fdf4df;
+  padding: 2em;
+  margin: 3em auto;
+  max-width: 800px;
+  border-left: 6px solid #c1926f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.hymnes-nationaux h2 {
+  text-align: center;
+  color: #5b3921;
+  margin-bottom: 1em;
+}
+
+.intro-hymnes {
+  text-align: justify;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+.liste-hymnes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.liste-hymnes li {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+audio {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.hymnes-nationaux {
+  background-color: #fdf4df;
+  padding: 2em;
+  margin: 3em auto;
+  max-width: 850px;
+  border-left: 6px solid #c1926f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.hymnes-nationaux h2 {
+  text-align: center;
+  color: #5b3921;
+  margin-bottom: 1em;
+}
+
+.intro-hymnes {
+  text-align: justify;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+.hymne-item {
+  margin-bottom: 2em;
+}
+
+.hymne-item h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.auteur {
+  font-weight: normal;
+  font-size: 0.95em;
+  color: #6b5e4e;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+.telecharger-hymne {
+  display: inline-block;
+  background-color: #c1926f;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.telecharger-hymne:hover {
+  background-color: #a57852;
+}
+
+/* Segregation */
+
+.espace-segregation {
+  background-color: #fef6e4;
+  padding: 2em;
+  margin: 3em 0;
+  border-left: 6px solid #c1926f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #5b3c2f;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.section-intro {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 1.5em auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.cta-zone {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.pdf-link,
+.temoignage-link {
+  background-color: #d9b48a;
+  padding: 0.8em 1.4em;
+  border-radius: 6px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-link:hover,
+.temoignage-link:hover {
+  background-color: #c8a078;
+}
+
+.citizen-message p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+/* actus */
+
+.btn-actualites {
+  display: inline-block;
+  margin: 2em auto;
+  padding: 0.8em 1.4em;
+  background-color: #c1926f;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 2em 0;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #e7dac1;
+  margin-top: 3em;
+}
+
+.footer-img {
+  width: 120px;
+  margin-bottom: 1em;
+}
+
+.footer-links {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5b3921;
+  font-weight: bold;
+}
+
+/* remonter en haut */
+
+.back-top {
+  text-decoration: none;
+  background-color: #c1926f;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.back-top:hover {
+  background-color: #a57852;
+}
+
+/* symboles */
+
+.symboles-officiels {
+  background-color: #fef6e4;
+  padding: 2em;
+  margin: 3em 0;
+  border-left: 6px solid #c1926f;
+}
+
+.symboles-officiels h2 {
+  text-align: center;
+  color: #5b3921;
+  margin-bottom: 0.5em;
+}
+
+.intro-symboles {
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto 2em auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.symboles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.symbole-item {
+  max-width: 250px;
+  text-align: center;
+}
+
+.symbole-item img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.symbole-item a {
+  display: block;
+  margin-top: 0.8em;
+  text-decoration: none;
+  background-color: #c1926f;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.symbole-item a:hover {
+  background-color: #a57852;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .pdf-link,
+  .temoignage-link,
+  .btn-actualites,
+  .back-top {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  .symboles-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  details div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-zone {
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+  }
+
+  .section-intro,
+  .intro-symboles,
+  .citizen-message p,
+  .titre-guyavenir {
+    padding: 0 1em;
+    font-size: 1em;
+  }
+}
