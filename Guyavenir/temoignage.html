@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dépôt de témoignage – Ségrégation à l'aéroport de Cayenne</title>
+    <link rel="stylesheet" href="temoignage.css" />
+    <link rel="icon" type="image/png" href="images/drapeau.png" />
+    <meta
+      name=" description"
+      content="Si vous avez été témoin ou victime d’un contrôle abusif, discriminatoire
+        ou ciblé à l’aéroport de Cayenne, ce formulaire est là pour faire
+        entendre votre voix. Vous pouvez témoigner anonymement ou avec identité.
+        Guyavenir garantit le respect de votre confidentialité et l’usage
+        constitutionnel de vos mots."
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Dépôt citoyen de témoignage ✍️</h1>
+      <p class="intro">
+        Si vous avez été témoin ou victime d’un contrôle abusif, discriminatoire
+        ou ciblé à l’aéroport de Cayenne, ce formulaire est là pour faire
+        entendre votre voix. Vous pouvez témoigner anonymement ou avec identité.
+        Guyavenir garantit le respect de votre confidentialité et l’usage
+        constitutionnel de vos mots.
+      </p>
+    </header>
+
+    <main>
+      <!-- <form class="temoignage-form"> -->
+      <!-- <form class="temoignage-form" method="POST" action="send-temoignage.php"> -->
+      <form
+        class="temoignage-form"
+        method="POST"
+        action="send-temoignage.php"
+        enctype="multipart/form-data"
+      >
+        <label for="nom">Nom (optionnel)</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Vous pouvez laisser vide"
+        />
+
+        <label for="commune">Commune de résidence</label>
+        <input type="text" id="commune" name="commune" required />
+
+        <label for="date">Date de l’événement</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="temoignage">Votre témoignage</label>
+        <textarea
+          id="temoignage"
+          name="temoignage"
+          rows="10"
+          required
+          placeholder="Décrivez ce que vous avez vécu ou observé..."
+        ></textarea>
+
+        <label for="preuve"
+          >Joindre une preuve audio/vidéo (optionnel)
+          <span
+            class="info-bulle"
+            title="Une pièce jointe peut renforcer la véracité du témoignage. Les contenus envoyés doivent être authentiques."
+            >ℹ️</span
+          >
+        </label>
+        <input type="file" id="preuve" name="preuve" accept="audio/*,video/*" />
+
+        <label for="consentement">
+          <input
+            type="checkbox"
+            id="consentement"
+            name="consentement"
+            required
+          />
+          J’accepte que mon témoignage soit utilisé à des fins d’analyse
+          constitutionnelle et citoyenne.
+        </label>
+
+        <button type="submit">📨 Envoyer le témoignage</button>
+      </form>
+    </main>
+
+    <footer>
+      <img
+        src="images/drapeau.png"
+        alt="Drapeau du Pays de l’or"
+        class="footer-img"
+      />
+      <p>
+        © Guyavenir – Tous droits réservés. Pour une justice équitable et sans
+        discrimination.
+      </p>
+      <nav class="footer-links">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="guyavenir.pdf" download>📄 Document Fondateur</a>
+        <a href="actualites-guyavenir.html">📢 Actualités</a>
+        <a href="temoignage.html">✍️ Témoignage</a>
+        <a href="constitution.html">📘 Constitution</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+<!-- Le connecter à un email -->
