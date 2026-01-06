@@ -172,6 +172,35 @@ details div {
   margin: 0 auto;
 }
 
+/* 20 milliard */
+
+.budget-pays-or {
+  background-color: #fef6e4;
+  padding: 2em;
+  margin: 3em auto;
+  max-width: 850px;
+  border-left: 6px solid #c1926f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.budget-pays-or h2 {
+  text-align: center;
+  color: #5b3921;
+  margin-bottom: 1em;
+}
+
+.budget-pays-or ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.budget-pays-or li {
+  padding: 0.4em 0;
+  border-bottom: 1px solid #d8c6a9;
+  font-size: 1.05em;
+}
+
 /* symboles audio */
 
 .hymnes-nationaux {
